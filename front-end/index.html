@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rico Dinheiriho App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="topo">
+            <h1>Rico Dinheirinho</h1>
+            <p>Gestão de money que é good</p>
+        </header>
+
+        <section class="saldo-card">
+            <h2>Saldo Atual</h2>
+            <p id="saldo">R$ 0</p>
+        </section>
+
+        <section class="resumo">
+            <div class="card entrada">
+                <p>Entradas</p>
+                <h3 id="entradas">R$ 0</h3>
+            </div>
+
+            <div class="card saida">
+                <p>Saídas</p>
+                <h3 id="saidas">R$ 0</h3>
+            </div>
+
+        </section>
+
+        <div class="layout">
+
+            <section class="nova-transacao">
+                <h2>Nova Transação</h2>
+                <input type="text" id="descricao" placeholder="Descrição">
+                <input type="number" id="valor" placeholder="Valor">
+
+                <select id="tipo">
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saida</option>
+                </select>
+
+                <input type="text" id="categoria" placeholder="Categoria"> 
+                <button onclick="criarTransacao()">Adicionar</button>
+            </section>
+
+            <section class="transacoes">
+                <h2>Transações</h2>
+                <ul id="listaTransacoes"></ul>
+            </section>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

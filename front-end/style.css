@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: 'segoe', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.app {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+}
+
+.topo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.topo p {
+    color: #cecece;
+}
+
+.saldo-card {
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.saldo-card h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.saldo-card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.resumo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 140px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.entrada {
+    background: #16a34a;
+}
+
+.saida {
+    background: #dc2626;
+}
+
+.nova-transacao {
+    background: #020617;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 10px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #1e293b;
+    color: white;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    
+    background: #6d28d9;
+}
+
+.transacoes {
+    background: #020617;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+    margin-top: 10px;
+
+    background: #1e293b;
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+li.entrada {
+
+    border-left: 5px solid #22c55e;
+}
+
+li.saida {
+
+    border-left: 5px solid #ef4444;
+}
+
+@media (min-width: 600px) {
+    .app {
+        max-width: 600px;
+    }
+
+    .saldo-card p {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 900px) {
+    .app {
+        max-width: 900px;
+    }
+
+    .resumo {
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+}
